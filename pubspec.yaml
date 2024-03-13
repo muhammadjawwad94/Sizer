@@ -9,7 +9,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
-  universal_io: ^2.0.4
+  universal_io: ^2.2.2
   flutter:
     sdk: flutter
 
