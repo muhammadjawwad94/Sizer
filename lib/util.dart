@@ -2,21 +2,21 @@ part of sizer;
 
 class SizerUtil {
   /// Device's BoxConstraints
-  static late BoxConstraints boxConstraints;
+  static BoxConstraints boxConstraints = BoxConstraints();
 
   /// Device's Orientation
-  static late Orientation orientation;
+  static Orientation orientation = Orientation.portrait;
 
   /// Type of Device
   ///
   /// This can either be mobile or tablet
-  static late DeviceType deviceType;
+  static DeviceType deviceType = DeviceType.mobile;
 
   /// Device's Height
-  static late double height;
+  static double height = 0.0;
 
   /// Device's Width
-  static late double width;
+  static double width = 0.0;
 
   /// Sets the Screen's size and Device's Orientation,
   /// BoxConstraints, Height, and Width
@@ -61,8 +61,8 @@ class SizerUtil {
     return width < 600
         ? smallSize //'phone'
         : width >= 600 && width <= 1024
-        ? mediumSize //'tablet'
-        : largeSize; //'desktop';
+            ? mediumSize //'tablet'
+            : largeSize; //'desktop';
   }
 }
 
